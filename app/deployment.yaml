@@ -17,8 +17,9 @@ metadata:
   name: posts
   labels:
     app: posts
+  foo: bar
 spec:
-  replicas: 4
+  replicas: 10
   selector:
     matchLabels:
       app: posts
@@ -31,7 +32,7 @@ spec:
     spec:
       containers:
       - name: posts
-        image: cdavisafc/cloudnative-circuitbreaker-posts:0.0.2
+        image: cdavisafc/cloudnative-circuitbreaker-posts:0.0.1
         securityContext:
           privileged: true
         env:
