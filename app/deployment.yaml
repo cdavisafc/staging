@@ -31,7 +31,7 @@ spec:
     spec:
       containers:
       - name: posts
-        image: cdavisafc/cloudnative-circuitbreaker-posts:0.0.3
+        image: cdavisafc/cloudnative-circuitbreaker-posts:0.0.4
         securityContext:
           privileged: true
         env:
